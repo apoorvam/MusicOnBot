@@ -62,13 +62,13 @@ def handleBotMessage(msg):
 
             if not (os.path.exists(upload_file)) :
                 bot.sendMessage(chat_id, 'Download for your song has started..')
-                print ('Song is already present in Bot collection.')
+                print ('Downloading song to Bot collection.')
 
                 downloadSong(downLoad_url, upload_file)
                 bot.sendMessage(chat_id, 'Download is complete. Song is being sent to you. Please wait.')
                 print ('Download is complete.')
             else:
-                print ('Downloading song to Bot collection.')
+                print ('Song is already present in Bot collection.')
 
             print ('Sending song')
 
